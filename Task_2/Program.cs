@@ -5,20 +5,14 @@
 Console.WriteLine("Введите число N: ");
 String inputValue = Console.ReadLine();
 int N = int.Parse(inputValue);
-int i=1;
+int i = 1;
 int quantity = 0;
-while ( i<= N)
+while (i <= N)
 {
-    if (N%i==0)
-    {
-        quantity+=1;
-    }
-    i+=1;
+    if (N % i == 0) quantity += 1;
+    i += 1;
 }
-Console.WriteLine($"{quantity} => количество чисел - делителей без остатка для заданного числа {N}");
+//Console.WriteLine($"{quantity} => количество чисел - делителей без остатка для заданного числа {N}");
 Console.WriteLine();
-if (quantity>2)
-{
-    Console.WriteLine($"{N} не является простым числом ");
-}
-else Console.WriteLine($"{N} является простым числом ");
+if (quantity > 2) Console.WriteLine($"Число {N} не является простым ");
+else Console.WriteLine($"Число {N} является простым ");
